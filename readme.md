@@ -1,6 +1,6 @@
 # CSGO config
 1. Clone this repository
-2. Unzip and edit files in the "actual" folder to match your preferred settings
+2. Edit files in the "actual" folder to match your preferred settings
 3. Match your config filepaths with the defaults associated to the game(s)
 4. Execute cp.py and it should copy/paste your cfg into the corresponding folders
 
