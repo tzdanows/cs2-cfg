@@ -10,16 +10,19 @@
 * Change Resolution --> 1920x1080(native) @ 360hz
 	* Customize Resolution to make 1440x1080 resolution but keep native (will enable ingame option for 1440x1080)
 * Adjust Desktop Size and Position --> Full-Screen
-# Launch Options CSGO: 
+# Launch Options 
+
+### CSGO: 
 ```
 -console -novid -freq 360 -w 1440 -h 1080 -tickrate 128 +fps_max 999 +rate 786432 +exec config.cfg +exec autoexec.cfg 
 ```
 
-# Launch Options CS2(or can exec ingame with `exec cs2` in console): 
+### CS2: 
+
 ```
 -console -novid -freq 360 -w 1440 -h 1080 -tickrate 128 +fps_max 999 +rate 786432 +exec cs2.cfg +exec autoexec.cfg
 ```
-
+or can you exec ingame with `exec config` or `exec cs2` in console(may need .cfg after filename)
 # Follow these configuration tips:
 
 * [https://wiki.refrag.gg/en/pc-optimization-increase-fps-csgo](https://wiki.refrag.gg/en/pc-optimization-increase-fps-csgo)
