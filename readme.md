@@ -29,8 +29,8 @@ or can you exec ingame with `exec config` or `exec cs2` in console(may need .cfg
 * https://twitter.com/csgolounge/status/1622899230753845248
 * Use per key binding for utility (Examples: C,V,F,G)
 
-# Hypervisor  
-### Enable Hypervisor  
+# Extras 
+### Enable Hypervisor 
 ```
 bcdedit /set hypervisorlaunchtype auto  
 ```
@@ -39,7 +39,12 @@ bcdedit /set hypervisorlaunchtype auto
 ```
 bcdedit /set hypervisorlaunchtype off  
 ```
-  
+Frequent faceit necessary toggle
+
+### Leetify clanid
+
+leetify "cl_clanid" `36953142`
+
 # Video Settings:
 
 Resolution: 1440 x 1080 stretched or preferred resolution
