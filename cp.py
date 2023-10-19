@@ -24,13 +24,11 @@ cs2_files_to_copy = [
 ]
 
 destinations = [
-    r"D:\Downloads\userdata\848999781\730\local\cfg",
-    r"D:\Downloads\userdata\115874183\730\local\cfg",
-    r"C:\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg"
+    r"D:\SteamLibrary\steamapps\common\Counter-Strike Global Offensive\csgo\cfg"
 ]
 
 cs2_destination = [
-    r"C:\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg"
+    r"D:\SteamLibrary\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg"
 ]
 
 for cfg in csgo_files_to_copy:
