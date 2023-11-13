@@ -21,9 +21,17 @@ cs2_files_to_copy = [
     "actual/pistol.cfg",
     "actual/rifle.cfg",
     "actual/cs2.cfg",
+    "actual/anubis-t-spawns.cfg",
+    "actual/anubis-t-spawns-hard.cfg",
+    "actual/ancient-t-spawns.cfg",
+    "actual/ancient-t-spawns-hard.cfg",
+    "actual/ancient-ct-spawns.cfg",
+    "actual/mirage-t-spawns.cfg",
+    "actual/mirage-t-spawns-hard.cfg",
+    "actual/surf.cfg",
 ]
 
-destinations = [
+csgo_destinations = [
     r"D:\SteamLibrary\steamapps\common\Counter-Strike Global Offensive\csgo\cfg"
 ]
 
@@ -32,7 +40,7 @@ cs2_destination = [
 ]
 
 for cfg in csgo_files_to_copy:
-    for dest in destinations:
+    for dest in csgo_destinations:
         print("Copying from {} to {}".format(cfg, dest))
         shutil.copy(cfg, dest)
 
