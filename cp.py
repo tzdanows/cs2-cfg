@@ -26,6 +26,8 @@ cs2_files_to_copy = [
     "actual/ancient-t-spawns.cfg",
     "actual/ancient-t-spawns-hard.cfg",
     "actual/ancient-ct-spawns.cfg",
+    "actual/ancient-ct.cfg",
+    "actual/ancient-ct-hard.cfg",
     "actual/mirage-t-spawns.cfg",
     "actual/mirage-t-spawns-hard.cfg",
     "actual/surf.cfg",
