@@ -1,36 +1,45 @@
-# CSGO config
+# CS2 config
 1. Clone this repository
-2. Edit files in the "actual" folder to match your preferred settings
-3. Match your config filepaths with the defaults associated to the game(s)
+2. Edit your config in the `actual/config.cfg` and `actual/autoexec.cfg` to match your  requirements
+3. Match your config filepaths in `cp.py` with the defaults associated to the game cfg filepath (mine is an example)
 4. Execute cp.py and it should copy/paste your cfg into the corresponding folders
 
-# NVIDIA Control Panel
+# Launch Options 
+to navigate: right click cs2 in steam library, properties, launch options at the bottom of the price
+### CS2: 
+```
+-novid -freq 360 -w 1280 -h 960 -tickrate 128 -fullscreen -nojoy  +exec config.cfg
+```
+OR exec in the game console with `exec config.cfg`
+
+
+# Video Settings:
+
+Resolution: 1280 x 960 stretched OR 1440 x 1080 stretched
+
+[Video settings here](https://github.com/tzdanows/cs2-cfg/blob/main/actual/cs2_video.txt)
+
+# Contributing Guidelines:
+
+* Contributions are always welcome to the `profigs` and `playerfigs` folders if you'd like to add more configs
+* However please do not modify any other folders and follow the `config.cfg` naming convention with `[playername] folders
+* Forks are always welcome for personal use
+* Overrides of pro configs are welcome especially if outdated heavily
+
+### make changes then run
+```bash
+git add . ; git commit -m "cfg change" ; git push ; python .\cp.py
+```
+
+# Extra
+
+## NVIDIA Control Panel
 * Digital Vibrance: 80% or 50%(default)
 * [3D Settings](https://i.imgur.com/vs5EpQx.gif) (potentially not optimal)
-* Change Resolution --> 1920x1080(native) @ 360hz
-	* Customize Resolution to make 1440x1080 resolution but keep native (will enable ingame option for 1440x1080)
+* Change Resolution --> 1920 x 1080(native) @ 360hz
+    * ensure your res is available in nvidia control panel
 * Adjust Desktop Size and Position --> Full-Screen
-# Launch Options 
-
-### CSGO: 
-```
--console -novid -freq 360 -w 1440 -h 1080 -tickrate 128 +fps_max 999 +rate 786432 +exec config.cfg +exec autoexec.cfg 
-```
-
-### CS2: 
-
-```
--console -novid -freq 360 -w 1440 -h 1080 -tickrate 128 +fps_max 999 +rate 786432 +exec cs2.cfg +exec autoexec.cfg
-```
-or can you exec ingame with `exec config` or `exec cs2` in console(may need .cfg after filename)
-# Follow these configuration tips:
-
-* [https://wiki.refrag.gg/en/pc-optimization-increase-fps-csgo](https://wiki.refrag.gg/en/pc-optimization-increase-fps-csgo)
-* https://twitter.com/csgolounge/status/1622899230753845248
-* Use per key binding for utility (Examples: C,V,F,G)
-
-# Extras 
-### Enable Hypervisor 
+## Enable Hypervisor 
 ```
 bcdedit /set hypervisorlaunchtype auto  
 ```
@@ -39,26 +48,21 @@ bcdedit /set hypervisorlaunchtype auto
 ```
 bcdedit /set hypervisorlaunchtype off  
 ```
-Frequent faceit necessary toggle
 
-### Leetify clanid
+## Follow these configuration tips:
 
-leetify "cl_clanid" `36953142`
+* [https://wiki.refrag.gg/en/pc-optimization-increase-fps-csgo](https://wiki.refrag.gg/en/pc-optimization-increase-fps-csgo)
+* https://twitter.com/csgolounge/status/1622899230753845248
 
-# Video Settings:
+## Delete Shader Cache
 
-Resolution: 1440 x 1080 stretched or preferred resolution
+https://x.com/fREQUENCYCS/status/1841838121735856261
 
-- Global Shadow Quality: HIGH
-- Model / Texture Detial: LOW
-- Texture Streaming: DISABLED
-- Effect Detail: HIGH
-- Shader Detail: VERY HIGH
-- Boost Player Contrast: ENABLED
-- Multicore Rendering: ENABLED (mat_queue_mode 2)
-- MSAA: None
-- FXAA: Disabled
-- Texture Filtering: Trilinear
-- VSYNC: off
-- blur: off
-- uber shaders: ENABLED
+```bash
+del /q /s "%USERPROFILE%\AppData\LocalLow\NVIDIA\PerDriverVersion\DXCache\*"
+```
+
+## Drivers
+
+- NVIDIA GPU https://www.nvidia.com/en-us/drivers/
+- AMD CPU https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-7000-series/amd-ryzen-9-7950x3d.html

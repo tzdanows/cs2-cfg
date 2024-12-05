@@ -3,7 +3,6 @@ binds = []
 config = "config.cfg"
 autoexec = "autoexec.cfg"
 
-
 with open(config, 'r') as fp:
     for line in fp.readlines():
         line = line.strip()

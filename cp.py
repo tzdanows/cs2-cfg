@@ -2,14 +2,12 @@ import shutil
 
 cs2_files_to_copy = [
     "actual/nades.cfg",
-    "actual/cs2.cfg",
+    "actual/config.cfg",
     "actual/autoexec.cfg",
-    "actual/video.txt",
     "actual/vs.cfg",
     "actual/awp.cfg",
     "actual/pistol.cfg",
     "actual/rifle.cfg",
-    "actual/cs2.cfg",
     "actual/anubis-t-spawns.cfg",
     "actual/anubis-t-spawns-hard.cfg",
     "actual/ancient-t-spawns.cfg",
@@ -19,7 +17,7 @@ cs2_files_to_copy = [
     "actual/ancient-ct-hard.cfg",
     "actual/mirage-t-spawns.cfg",
     "actual/mirage-t-spawns-hard.cfg",
-    "actual/surf.cfg",
+    "actual/alt.cfg",
 ]
 
 # put your path here
