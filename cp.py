@@ -22,7 +22,7 @@ cs2_files_to_copy = [
 
 # put your path here
 cs2_destination = [
-    r"D:\SteamLibrary\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg"
+    r"Z:\SteamLibrary\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg"
 ]
 
 for cfg in cs2_files_to_copy:
