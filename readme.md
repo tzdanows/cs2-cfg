@@ -8,7 +8,7 @@
 to navigate: right click cs2 in steam library, properties, launch options at the bottom of the price
 ### CS2: 
 ```
--novid -freq 360 -w 1280 -h 960 -tickrate 128 -fullscreen -nojoy  +exec config.cfg
+-novid -freq 240 -w 1440 -h 1080 -tickrate 128 -fullscreen -nojoy +exec config.cfg
 ```
 OR exec in the game console with `exec config.cfg`
 
