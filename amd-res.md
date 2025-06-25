@@ -67,11 +67,11 @@ this has temporarily fixed my issues of the game crashing upon changing my resol
   "RefreshRateHz": 359,
   "Presentation": "Progressive",
   "TimingStandard": "Manual",
-  "GPixelClock_kHz": 702720,
-  "GRefreshRate_Hz": 358.996,
+  "GPixelClock_kHz": 691760,
+  "GRefreshRate_Hz": 358.999,
   "TimingInfo": {
     "Total": {
-      "Horizontal": 1608,
+      "Horizontal": 1544,
       "Vertical": 1248
     },
     "Display": {
@@ -89,8 +89,9 @@ this has temporarily fixed my issues of the game crashing upon changing my resol
   },
   "TimingPolarity": {
     "Horizontal": "Positive",
-    "Vertical": "N
-
+    "Vertical": "Negative"
+  }
+}
 ```
 
 
