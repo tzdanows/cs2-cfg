@@ -64,6 +64,8 @@ These are general recommendations for in-game video settings, often used for str
 
 * **Resolution:** 1280 x 960 stretched OR 1440 x 1080 stretched.
 * For detailed video settings and what to adjust in-game, refer to this link: [Video settings here](https://github.com/tzdanows/cs2-cfg/blob/main/actual/cs2_video.txt) (potentially outdated)
+* visit [the 2nd readme](https://github.com/tzdanows/cs2-cfg/blob/main/readme-2.md) for additional optimizations
+
 
 ---
 
