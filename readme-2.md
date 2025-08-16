@@ -66,6 +66,7 @@ Keeping your drivers updated is crucial for optimal performance and stability.
 
 consider these external resources for further optimization:
 
+* **modern cs2 optimization:** [https://refrag.gg/blog/the-ultimate-cs2-optimization-guide/](https://refrag.gg/blog/the-ultimate-cs2-optimization-guide/)
 * **old csgo pc optimization:** [https://wiki.refrag.gg/en/pc-optimization-increase-fps-csgo](https://wiki.refrag.gg/en/pc-optimization-increase-fps-csgo)
 * **old optimization tips:** [https://twitter.com/csgolounge/status/1622899230753845248](https://twitter.com/csgolounge/status/1622899230753845248)
 * pro-cfg-list
