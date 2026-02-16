@@ -84,3 +84,8 @@ These are general recommendations for in-game video settings, often used for str
 git checkout -b <new-branch-name>
 git add . ; git commit -m "cfg change" ; git push ; python .\cp.py
 ```
+
+**video settings location: **
+```bash
+C:\Program Files (x86)\Steam\userdata\115874183\730\local\cfg
+```

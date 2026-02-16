@@ -18,11 +18,14 @@ cs2_files_to_copy = [
     "actual/mirage-t-spawns.cfg",
     "actual/mirage-t-spawns-hard.cfg",
     "actual/alt.cfg",
+    "actual/dm.cfg",
+    "actual/dm2.cfg",
 ]
 
 # put your path here
 cs2_destination = [
-    r"Z:\SteamLibrary\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg"
+    r"Z:\SteamLibrary\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg",
+    r"C:\Program Files (x86)\Steam\userdata\115874183\730\local\cfg",
 ]
 
 for cfg in cs2_files_to_copy:
