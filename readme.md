@@ -85,7 +85,12 @@ git checkout -b <new-branch-name>
 git add . ; git commit -m "cfg change" ; git push ; python .\cp.py
 ```
 
-**video settings location: **
+**video settings location: + update 2/16/2026 --> **
 ```bash
 C:\Program Files (x86)\Steam\userdata\115874183\730\local\cfg
+```
+```json
+amd-anti-lag: off
+amd-free-sync: off
+scaling-mode: full panel
 ```
