@@ -1,4 +1,4 @@
-## Additional Optimizations:
+## Optimizations:
 
 additional optimizations I tend to consider
 
