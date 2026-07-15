@@ -1,6 +1,6 @@
 # CONFIG-ONBOARDING
 
-onboarding reference for `actual.cfg` binds and movement
+onboarding reference for `actual/settings.cfg` binds and movement
 
 ---
 

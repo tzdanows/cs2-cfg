@@ -25,8 +25,8 @@ Your config files (`.cfg`) store custom commands and settings for CS2.
 **To apply changes:**
 After making changes to your local config files and running `cp.py`, you can either:
 
-* Restart CS2, or
-* Open the in-game console (usually `~`) and type `exec config.cfg` and press Enter.
+* Restart CS2(launch options or autoexec will apply), or
+* Open the in-game console (usually `~`) and type `exec settings` and press Enter.
 
 ### 2\. Launch Options
 
@@ -43,7 +43,7 @@ Launch options are commands that run automatically every time you start CS2 thro
 4.  Copy and paste the following recommended launch options:
 
     ```
-    -novid -freq 360 -w 1280 -h 960 -tickrate 128 -fullscreen -nojoy +exec config.cfg
+    -novid -freq 360 -w 1280 -h 960 -tickrate 128 -fullscreen -nojoy +exec settings.cfg
     ```
     or my res: `1440x1080` (may work better on 1440p monitors)
     ```

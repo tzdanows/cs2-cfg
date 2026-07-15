@@ -1,39 +1,51 @@
+import os
 import shutil
 
 cs2_files_to_copy = [
     "actual/nades.cfg",
-    "actual/config.cfg",
+    "actual/settings.cfg",
     "actual/autoexec.cfg",
     "actual/vs.cfg",
     "actual/awp.cfg",
     "actual/pistol.cfg",
     "actual/rifle.cfg",
-    "actual/anubis-t-spawns.cfg",
-    "actual/anubis-t-spawns-hard.cfg",
-    "actual/ancient-t-spawns.cfg",
-    "actual/ancient-t-spawns-hard.cfg",
-    "actual/ancient-ct-spawns.cfg",
-    "actual/ancient-ct.cfg",
-    "actual/ancient-ct-hard.cfg",
-    "actual/mirage-t-spawns.cfg",
-    "actual/mirage-t-spawns-hard.cfg",
-    "actual/alt.cfg",
     "actual/dm.cfg",
     "actual/dm2.cfg",
 ]
 
-# put your path here
-cs2_destination = [
-    r"Z:\SteamLibrary\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg",
-    r"C:\Program Files (x86)\Steam\userdata\82628612\730\local\cfg",
-    r"C:\Program Files (x86)\Steam\userdata\848999781\local\cfg",
-    r"C:\Program Files (x86)\Steam\userdata\272785020\730\local\cfg",
-    r"C:\Program Files (x86)\Steam\userdata\188070613\730\local\cfg",
-    r"C:\Program Files (x86)\Steam\userdata\1861230380",
-    r"C:\Program Files (x86)\Steam\userdata\115874183\730\local\cfg",  # main account
+STEAM_USERDATA = r"C:\Program Files (x86)\Steam\userdata"
+GAME_CFG_DIRS = [
+    r"C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg",
 ]
 
+def discover_cfg_dirs():
+    dirs = list(GAME_CFG_DIRS)
+    if not os.path.isdir(STEAM_USERDATA):
+        print(f"Warning: Steam userdata not found at {STEAM_USERDATA}")
+        return dirs
+    for steamid in os.listdir(STEAM_USERDATA):
+        cfg_path = os.path.join(STEAM_USERDATA, steamid, "730", "local", "cfg")
+        if os.path.isdir(cfg_path):
+            dirs.append(cfg_path)
+    return dirs
+
+cs2_destination = discover_cfg_dirs()
+print(f"Found {len(cs2_destination)} destination(s):")
+for d in cs2_destination:
+    print(f"  {d}")
+print()
+
+errors = []
 for cfg in cs2_files_to_copy:
     for dest in cs2_destination:
-        print("Copying from {} to {}".format(cfg, dest))
-        shutil.copy(cfg, dest)
+        try:
+            shutil.copy(cfg, dest)
+            print(f"Copied {cfg} -> {dest}")
+        except Exception as e:
+            errors.append((cfg, dest, e))
+            print(f"FAILED {cfg} -> {dest}: {e}")
+
+if errors:
+    print(f"\n{len(errors)} error(s) occurred.")
+else:
+    print("\nAll files copied successfully.")
