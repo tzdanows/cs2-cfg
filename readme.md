@@ -8,19 +8,13 @@ Your config files (`.cfg`) store custom commands and settings for CS2.
 
 **Steps:**
 
-1.  **Clone this repository:** Get all the necessary files by cloning this GitHub repository to your computer.
-2.  **Edit your config:**
-    * Open `actual/config.cfg` and `actual/autoexec.cfg` with a text editor (like Notepad).
-    * Modify the settings inside these files to suit your preferences (e.g., crosshair, sensitivity, keybinds).
-      * *or leave them be and get used to them o7*
-3.  **Match file paths in `cp.py` to the sample below:**
-    * Open `cp.py` with a text editor.
-    * Ensure the file paths in `cp.py` correctly point to where CS2 stores its config files on *your* computer. The default path is usually `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike 2\game\csgo\cfg\`.
-   4. **Run the script:**
-       * Execute `cp.py`. This script will automatically copy your customized `config.cfg` and `autoexec.cfg` into the correct CS2 folder you just set up.
-       ```bash
-       python3 cp.py
-      ```
+1.  **Clone this repository.**
+2.  **Edit your config:** open `actual/config.cfg` and `actual/autoexec.cfg` in a text editor and adjust to taste (crosshair, sensitivity, keybinds) — *or leave them as-is o7*.
+3.  **Set your CS2 cfg path in `cp.py`:** default is `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike 2\game\csgo\cfg\`.
+4.  **Run it:**
+    ```bash
+    python3 cp.py
+    ```
 
 **To apply changes:**
 After making changes to your local config files and running `cp.py`, you can either:
@@ -50,33 +44,34 @@ Launch options are commands that run automatically every time you start CS2 thro
     -novid -freq 360 -w 1440 -h 1080 -tickrate 128 -fullscreen -nojoy +exec config.cfg
     ```
 
-    * `-novid`: Skips the intro video.
-    * `-freq 360`: Sets your monitor refresh rate (change `360` to your monitor's actual refresh rate).
-    * `-w 1280 -h 960`: Sets your game resolution to 1280x960 (adjust as desired).
-    * `-tickrate 128`: Sets the tickrate for offline servers/bots.
-    * `-fullscreen`: Forces fullscreen mode.
-    * `-nojoy`: Disables joystick support.
-    * `+exec config.cfg`: Automatically executes your `config.cfg` file when the game starts.
+    | Flag | Effect |
+    |---|---|
+    | `-novid` | Skip intro video |
+    | `-freq 360` | Monitor refresh rate (match yours) |
+    | `-w`/`-h` | Game resolution |
+    | `-tickrate 128` | Tickrate for offline servers/bots |
+    | `-fullscreen` | Force fullscreen |
+    | `-nojoy` | Disable joystick support |
+    | `+exec <file>.cfg` | Config to run on launch |
 
 ### 3\. Video Settings (In-Game)
 
 These are general recommendations for in-game video settings, often used for stretched resolutions.
 
 * **Resolution:** 1280 x 960 stretched OR 1440 x 1080 stretched.
-* For detailed video settings and what to adjust in-game, refer to this link: [Video settings here](https://github.com/tzdanows/cs2-cfg/blob/main/actual/cs2_video.txt) (potentially outdated)
-* visit [the 2nd readme](https://github.com/tzdanows/cs2-cfg/blob/main/readme-2.md) for additional optimizations
+* Reference: [`actual/cs2_video.txt`](https://github.com/tzdanows/cs2-cfg/blob/main/actual/cs2_video.txt) (potentially outdated)
+* See [`docs/OPTIMIZATIONS.md`](https://github.com/tzdanows/cs2-cfg/blob/main/docs/OPTIMIZATIONS.md) for further tuning
 
 
 ---
 
 ### Contributing Guidelines:
 
-* Contributions are welcome to the `profigs` and `playerfigs` folders to add more configurations.
+* Contributions are welcome to the `playerfigs` folder to add more configurations.
 * **Please make a new branch for your contributions before submitting a pull request.**
 * Please **do not modify any other folders**.
 * Follow the `config.cfg` naming convention within `[playername]` folders.
 * Forks are always welcome for personal use.
-* Overrides of pro configs are welcome, especially if they are heavily outdated.
 
 **To checkout a new branch and make changes:**
 
